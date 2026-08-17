@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Configurações | Hotel Pet</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <a class="brand" href="index.html"><img src="img/logo-pata.svg" alt="Logo Hotel Pet"><div><strong>Hotel Pet</strong><span>Gestão inteligente</span></div></a>
+  <div class="nav-title">Menu principal</div>
+  <nav class="nav"><a class="" href="index.html"><span class="nav-icon">⌂</span><span>Dashboard</span></a>
+<a class="" href="reservas.html"><span class="nav-icon">▣</span><span>Reservas</span></a>
+<a class="" href="pets.html"><span class="nav-icon">●</span><span>Pets</span></a>
+<a class="" href="usuarios.html"><span class="nav-icon">♙</span><span>Usuários</span></a>
+<a class="active" href="configuracoes.html"><span class="nav-icon">⚙</span><span>Configurações</span></a></nav>
+  <div class="nav-title">Conta</div>
+  <nav class="nav"><a href="perfil.html"><span class="nav-icon">◉</span><span>Meu perfil</span></a></nav>
+  <div class="sidebar-bottom"><small>Perfil atual</small><strong>Gerente • Acesso total</strong></div>
+</aside>
+<main class="main">
+<header class="topbar"><div class="breadcrumb">Hotel Pet / <strong>Configurações</strong></div>
+<a class="profile-mini" href="perfil.html"><div class="avatar">CS</div><div><strong style="font-size:13px">Carla Santos</strong><div style="font-size:11px;color:var(--muted)">Gerente</div></div></a></header>
+<section class="content">
+<div class="page-head"><div><h1>Configurações</h1><p>Controle os parâmetros gerais de funcionamento do Hotel Pet.</p></div></div>
+<div class="grid grid-2">
+<div class="card"><h2 class="section-title">Valores da hospedagem</h2><div class="form-grid">
+<div class="form-group"><label>Valor da diária</label><input value="R$ 120,00"></div>
+<div class="form-group"><label>Taxa adicional</label><input value="R$ 0,00"></div>
+<div class="form-group full"><label>Observação</label><textarea>Valor padrão aplicado às novas reservas. Reservas já finalizadas mantêm o valor registrado.</textarea></div>
+<div class="form-group full"><button class="btn btn-primary">Salvar valores</button></div>
+</div></div>
+<div class="card"><h2 class="section-title">Capacidade do hotel</h2><div class="form-grid">
+<div class="form-group"><label>Número total de vagas</label><input type="number" value="30"></div>
+<div class="form-group"><label>Vagas ocupadas</label><input type="number" value="24" readonly></div>
+<div class="form-group full"><label>Disponibilidade atual</label><div class="kpi-row"><strong style="font-size:30px;color:var(--primary)">06 vagas</strong><span class="badge green">Disponível</span></div></div>
+<div class="form-group full"><div class="progress"><span style="width:80%"></span></div><small style="color:var(--muted)">80% da capacidade está ocupada.</small></div>
+<div class="form-group full"><button class="btn btn-primary">Atualizar capacidade</button></div>
+</div></div>
+<div class="card"><h2 class="section-title">Preferências do sistema</h2><div class="form-grid">
+<div class="form-group"><label>Antecedência mínima para reserva</label><select><option>1 dia</option><option>2 dias</option><option>3 dias</option></select></div>
+<div class="form-group"><label>Status padrão de nova reserva</label><select><option>Aguardando</option><option>Confirmada</option></select></div>
+<div class="form-group full"><label>Mensagem exibida no dashboard</label><input value="Seu hotel está pronto para receber os melhores amigos."></div>
+<div class="form-group full"><button class="btn btn-primary">Salvar preferências</button></div>
+</div></div>
+<div class="card"><h2 class="section-title">Resumo das regras</h2><p style="color:var(--muted);font-size:13px;line-height:1.7">O gerente pode alterar o valor das diárias e a quantidade de vagas disponíveis. A interface é estática, portanto os botões representam as ações previstas no sistema e não persistem dados.</p><span class="badge blue">Projeto sem backend</span></div>
+</div>
+</section>
+<footer class="footer">Hotel Pet • Projeto acadêmico desenvolvido com HTML e CSS • Visão do Gerente</footer>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | Hotel Pet</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <a class="brand" href="index.html"><img src="img/logo-pata.svg" alt="Logo Hotel Pet"><div><strong>Hotel Pet</strong><span>Gestão inteligente</span></div></a>
+  <div class="nav-title">Menu principal</div>
+  <nav class="nav"><a class="active" href="index.html"><span class="nav-icon">⌂</span><span>Dashboard</span></a>
+<a class="" href="reservas.html"><span class="nav-icon">▣</span><span>Reservas</span></a>
+<a class="" href="pets.html"><span class="nav-icon">●</span><span>Pets</span></a>
+<a class="" href="usuarios.html"><span class="nav-icon">♙</span><span>Usuários</span></a>
+<a class="" href="configuracoes.html"><span class="nav-icon">⚙</span><span>Configurações</span></a></nav>
+  <div class="nav-title">Conta</div>
+  <nav class="nav"><a href="perfil.html"><span class="nav-icon">◉</span><span>Meu perfil</span></a></nav>
+  <div class="sidebar-bottom"><small>Perfil atual</small><strong>Gerente • Acesso total</strong></div>
+</aside>
+<main class="main">
+<header class="topbar"><div class="breadcrumb">Hotel Pet / <strong>Dashboard</strong></div>
+<a class="profile-mini" href="perfil.html"><div class="avatar">CS</div><div><strong style="font-size:13px">Carla Santos</strong><div style="font-size:11px;color:var(--muted)">Gerente</div></div></a></header>
+<section class="content">
+<div class="page-head"><div><h1>Olá, Carla! 👋</h1><p>Acompanhe a operação do Hotel Pet em um só lugar.</p></div><div class="actions"><a class="btn btn-primary" href="reservas.html">＋ Nova reserva</a></div></div>
+<div class="card hero">
+  <div><span class="badge green">Visão do Gerente</span><h2>Seu hotel está pronto para receber os melhores amigos.</h2><p>Controle reservas, pets, usuários, valores das diárias e disponibilidade de vagas. Esta versão é estática e representa a interface do sistema.</p><a class="btn btn-light" href="configuracoes.html">Acessar configurações →</a></div>
+  <div class="hero-art"><img src="img/pet-dog.svg" alt="Ilustração de cachorro"></div>
+</div>
+<div style="height:18px"></div>
+<div class="grid grid-4">
+  <div class="card stat"><div><div class="label">Reservas ativas</div><div class="number">18</div></div><div class="stat-icon">▣</div></div>
+  <div class="card stat"><div><div class="label">Pets hospedados</div><div class="number">24</div></div><div class="stat-icon yellow">●</div></div>
+  <div class="card stat"><div><div class="label">Vagas disponíveis</div><div class="number">06</div></div><div class="stat-icon orange">⌂</div></div>
+  <div class="card stat"><div><div class="label">Faturamento do mês</div><div class="number">R$ 8.420</div></div><div class="stat-icon purple">R$</div></div>
+</div>
+<div style="height:18px"></div>
+<div class="grid grid-2">
+  <div class="card"><h2 class="section-title">Reservas recentes</h2><div class="table-wrap"><table class="table">
+  <thead><tr><th>Reserva</th><th>Pet</th><th>Período</th><th>Status</th></tr></thead>
+  <tbody>
+  <tr><td>#HP-1024</td><td><div class="pet-row"><img class="pet-thumb" src="img/pet-dog.svg" alt=""><div><strong>Thor</strong><span>João Almeida</span></div></div></td><td>17–21/08</td><td><span class="badge green">Em andamento</span></td></tr>
+  <tr><td>#HP-1023</td><td><div class="pet-row"><img class="pet-thumb" src="img/pet-cat.svg" alt=""><div><strong>Luna</strong><span>Mariana Costa</span></div></div></td><td>16–20/08</td><td><span class="badge blue">Confirmada</span></td></tr>
+  <tr><td>#HP-1022</td><td><div class="pet-row"><img class="pet-thumb" src="img/pet-poodle.svg" alt=""><div><strong>Mel</strong><span>Rafael Souza</span></div></div></td><td>15–18/08</td><td><span class="badge yellow">Aguardando</span></td></tr>
+  </tbody></table></div></div>
+  <div class="card"><h2 class="section-title">Ocupação das vagas</h2><div class="kpi-row"><strong style="font-size:30px">80%</strong><span style="color:var(--muted)">24 de 30 vagas ocupadas</span></div><div style="height:15px"></div><div class="progress"><span style="width:80%"></span></div><p style="font-size:12px;color:var(--muted)">Você pode alterar o limite de vagas em Configurações.</p><a class="btn btn-light" href="configuracoes.html">Gerenciar vagas</a></div>
+</div>
+</section>
+<footer class="footer">Hotel Pet • Projeto acadêmico desenvolvido com HTML e CSS • Visão do Gerente</footer>
+</main>
+</div>
+</body></html>
