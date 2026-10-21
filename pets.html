@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pets | Hotel Pet</title><link rel="stylesheet" href="css/style.css"></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Pets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-<div class="app">
-<aside class="sidebar">
-  <a class="brand" href="index.html"><img src="img/logo-pata.svg" alt="Logo Hotel Pet"><div><strong>Hotel Pet</strong><span>Gestão inteligente</span></div></a>
-  <div class="nav-title">Menu principal</div>
-  <nav class="nav"><a class="" href="index.html"><span class="nav-icon">⌂</span><span>Dashboard</span></a>
-<a class="" href="reservas.html"><span class="nav-icon">▣</span><span>Reservas</span></a>
-<a class="active" href="pets.html"><span class="nav-icon">●</span><span>Pets</span></a>
-<a class="" href="usuarios.html"><span class="nav-icon">♙</span><span>Usuários</span></a>
-<a class="" href="configuracoes.html"><span class="nav-icon">⚙</span><span>Configurações</span></a></nav>
-  <div class="nav-title">Conta</div>
-  <nav class="nav"><a href="perfil.html"><span class="nav-icon">◉</span><span>Meu perfil</span></a></nav>
-  <div class="sidebar-bottom"><small>Perfil atual</small><strong>Gerente • Acesso total</strong></div>
-</aside>
-<main class="main">
-<header class="topbar"><div class="breadcrumb">Hotel Pet / <strong>Pets</strong></div>
-<a class="profile-mini" href="perfil.html"><div class="avatar">CS</div><div><strong style="font-size:13px">Carla Santos</strong><div style="font-size:11px;color:var(--muted)">Gerente</div></div></a></header>
-<section class="content">
-<div class="page-head"><div><h1>Pets</h1><p>Cadastro e acompanhamento dos animais hospedados.</p></div><a class="btn btn-primary" href="#novo-pet">＋ Cadastrar pet</a></div>
-<div class="filterbar"><input type="search" placeholder="Pesquisar por nome, raça ou proprietário..."><select><option>Todos os tipos</option><option>Cachorro</option><option>Gato</option></select><select><option>Todos os tamanhos</option><option>Pequeno</option><option>Médio</option><option>Grande</option></select><button class="btn btn-light">Pesquisar</button></div>
-<div class="pet-grid">
-<div class="card pet-card"><img src="img/pet-dog.svg" alt="Thor"><div class="pet-card-body"><h3>Thor</h3><p>João Almeida</p><div class="pet-meta"><span>Cachorro</span><span>Golden Retriever</span><span>Grande</span></div><div class="actions" style="margin-top:15px"><a class="btn btn-light" href="#editar-pet">Visualizar</a><a class="btn btn-light" href="#editar-pet">Editar</a></div></div></div>
-<div class="card pet-card"><img src="img/pet-cat.svg" alt="Luna"><div class="pet-card-body"><h3>Luna</h3><p>Mariana Costa</p><div class="pet-meta"><span>Gato</span><span>Siamês</span><span>Pequeno</span></div><div class="actions" style="margin-top:15px"><a class="btn btn-light" href="#editar-pet">Visualizar</a><a class="btn btn-light" href="#editar-pet">Editar</a></div></div></div>
-<div class="card pet-card"><img src="img/pet-poodle.svg" alt="Mel"><div class="pet-card-body"><h3>Mel</h3><p>Rafael Souza</p><div class="pet-meta"><span>Cachorro</span><span>Poodle</span><span>Médio</span></div><div class="actions" style="margin-top:15px"><a class="btn btn-light" href="#editar-pet">Visualizar</a><a class="btn btn-light" href="#editar-pet">Editar</a></div></div></div>
-</div>
-<div style="height:18px"></div>
-<div class="grid grid-2" id="novo-pet">
-<div class="card"><h2 class="section-title">Cadastrar novo pet</h2><div class="form-grid">
-<div class="form-group"><label>Nome do pet</label><input placeholder="Ex.: Bob"></div>
-<div class="form-group"><label>Proprietário</label><select><option>Selecione o cliente</option><option>João Almeida</option><option>Mariana Costa</option></select></div>
-<div class="form-group"><label>Tipo de animal</label><select><option>Cachorro</option><option>Gato</option><option>Outro</option></select></div>
-<div class="form-group"><label>Raça</label><input placeholder="Ex.: Labrador"></div>
-<div class="form-group"><label>Tamanho</label><select><option>Pequeno</option><option>Médio</option><option>Grande</option></select></div>
-<div class="form-group"><label>Foto</label><input type="file" accept="image/*"></div>
-<div class="form-group full"><button class="btn btn-primary">Cadastrar pet</button></div>
-</div></div>
-<div class="card" id="editar-pet"><h2 class="section-title">Ficha do pet — Thor</h2><div class="pet-row" style="margin-bottom:16px"><img class="pet-thumb" style="width:70px;height:70px" src="img/pet-dog.svg" alt=""><div><strong style="font-size:18px">Thor</strong><span>Golden Retriever • Grande • João Almeida</span></div></div><h3 style="font-size:14px">Histórico de reservas</h3><table class="table"><tr><td>#HP-1024</td><td>17–21/08/2026</td><td><span class="badge green">Em andamento</span></td></tr><tr><td>#HP-0998</td><td>03–06/07/2026</td><td><span class="badge green">Finalizada</span></td></tr></table><div class="actions" style="margin-top:16px"><button class="btn btn-primary">Salvar alterações</button><button class="btn btn-danger">Excluir pet</button></div></div>
-</div>
-</section>
-<footer class="footer">Hotel Pet • Projeto acadêmico desenvolvido com HTML e CSS • Visão do Gerente</footer>
-</main>
-</div>
-</body></html>
+    <header>
+        <div class="logo">
+            <h2>🐾 Hotel Pet</h2>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="pets.html">Pets</a>
+            <a href="usuarios.html">Usuários</a>
+            <a href="configuracoes.html" class="menu-configuracoes">Configurações</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Cadastro e Gestão de Pets</h1>
+        <p>Consulte, edite ou cadastre novos animais de estimação no sistema.</p>
+
+        <div class="card">
+            <h3>Pets Cadastrados</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Tipo</th>
+                        <th>Raça</th>
+                        <th>Porte</th>
+                        <th>Proprietário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rex</td>
+                        <td>Cão</td>
+                        <td>Poodle</td>
+                        <td>Médio</td>
+                        <td>Carlos Silva</td>
+                    </tr>
+                    <tr>
+                        <td>Mimi</td>
+                        <td>Gato</td>
+                        <td>Siamês</td>
+                        <td>Pequeno</td>
+                        <td>Ana Souza</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="js/navigation.js"></script>
+</body>
+</html>
